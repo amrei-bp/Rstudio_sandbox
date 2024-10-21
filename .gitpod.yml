@@ -4,3 +4,6 @@ tasks:
       sudo chown gitpod -R /home/gitpod/
       curl -fsSL https://pixi.sh/install.sh | bash
       . /home/gitpod/.bashrc
+  - name: Pull Rstudio Container
+    command: |
+      docker pull community.wave.seqera.io/library/r-tidyverse_rstudio-desktop:d64d5376a7ffa024
