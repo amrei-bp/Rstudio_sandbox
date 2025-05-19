@@ -19,6 +19,8 @@ docker image ls
 To start the container with interactive terminal: 
 docker run --rm -it imageID bash
 
+Take the imageID that is provided in the listed images. 
+
 Now you can use R within the container. 
 
 To exit the container:
