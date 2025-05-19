@@ -25,3 +25,21 @@ Now you can use R within the container.
 
 To exit the container:
 exit
+
+## Rstudio in browser
+
+To run the rstudio graphical user interface you can make use of [The Rocker Project](https://rocker-project.org/), where they have built a variety of Docker containers for R. 
+
+You can start the rstudio instance with 
+
+```{.bash}
+docker run --rm -ti -e PASSWORD=yourpassword -p 8787:8787 rocker/rstudio
+```
+
+When running from within the gitpod you will get a little pop-up asking you to open `port 8787`, say yes. 
+
+Then there will be another pop-up (kill process with ctrl + c and start with the docker run command again if it doesn't pop up) where you need to say you want to run in the browser. 
+
+In the browser window that opens up the user name will be `root`, the password `yourpassword`. Once you are logged in you can use Rstudio in your browser. 
+
+To start a Rstudio session outside of Gitpod you need to have docker installed. 
